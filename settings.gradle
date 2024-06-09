@@ -7,3 +7,5 @@ pluginManagement {
 rootProject.name = 'demo'
 include (':examples:restservice')
 include (':examples:restserviceconsume')
+include (':examples:upload')
+include (':examples:restservicepay')

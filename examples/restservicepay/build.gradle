@@ -1,0 +1,25 @@
+
+plugins {
+  id 'java'
+  id 'org.springframework.boot' version '3.3.1-SNAPSHOT'
+  id 'io.spring.dependency-management' version '1.1.5'
+  id 'application'
+}
+java {
+  sourceCompatibility = '21'
+}
+repositories {
+  mavenCentral()
+  maven { url 'https://repo.spring.io/snapshot' }
+}
+
+application {
+  mainClass = 'payroll.PayrollApplication'
+}
+
+
+dependencies {
+  implementation 'org.springframework.boot:spring-boot-starter-data-jpa:3.3.0'
+  // https://mvnrepository.com/artifact/com.h2database/h2
+  implementation 'com.h2database:h2:2.2.224'
+}
